@@ -16,10 +16,10 @@ jobs:
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v3
 
-      - name: Publicar no GitHub Pages
+      - name: Criar artefato para deploy
         uses: actions/upload-pages-artifact@v2
         with:
-          path: .  # Publica todo o repositório
+          path: .  # Publica todos os arquivos do repositório
 
-      - name: Implantar
+      - name: Publicar no GitHub Pages
         uses: actions/deploy-pages@v1
